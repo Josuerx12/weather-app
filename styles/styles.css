@@ -1,0 +1,238 @@
+@import url(../styles/reset.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#img-s {
+    width: 56px;
+    height: 62px;
+    margin-bottom: 30px;
+}
+
+#celcius {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px;
+    background: #E7E7EB;
+    border-radius: 54px;
+    border: none;
+    box-shadow: 2px 2px 4px black;
+}
+
+#fireheight {
+    display: flex;
+    justify-content: center;
+    color: #E7E7EB;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px;
+    background: #585676;
+    border-radius: 54px;
+    border: none;
+    box-shadow: 2px 2px 4px black;
+}
+
+.left-section {
+    width: 32%;
+    height: 1080px;
+    background: #1E213A;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.right-section {
+    background: #100E1D;
+    width: 68%;
+    height: 1080px;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+}
+
+.button button {
+    background: #6E707A;
+    cursor: pointer;
+    margin-left: 30px;
+    padding: 7px 10px 7px 10px;
+    border: none;
+    border-radius: 2px;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.863);
+}
+
+.geo-ico {
+    display: flex;
+    margin-right: 30px;
+    align-items: center;
+    background: #6E707A;
+    border-radius: 16px;
+    padding: 2px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.863);
+}
+
+.cloud-background {
+    flex-wrap: wrap;
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cloud-background::before {
+content: '';
+display: block;
+position: absolute;
+left: 20;
+top: 30;
+width: 580px;
+height: 340px;
+opacity: 0.1;
+background: url(../assets/imgs/Cloud-background.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+-webkit-backdrop-filter: blur(10px);
+backdrop-filter: blur(10px);
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.left-temp {
+    color: #f2f2f2;
+    margin-bottom: 40px;
+    font-size: 72px;
+}
+
+.location {
+    color: #a09fb1c7;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.selector-temp {
+    margin-top: 42px;
+    margin-right: 125px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.week-time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-right: 123px;
+    margin-top: 66px;
+    margin-left: 154px;
+    gap: 30px;
+}
+
+.week {
+    font-weight: 500;
+    font-size: 16px;
+    color: #E7E7EB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18px;
+    margin-bottom: 10px;
+}
+
+.temp-week {
+    font-weight: 500;
+    font-size: 16px;
+    color: #E7E7EB;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+.temp-week>p{
+    color:#A09FB1;
+}
+
+.tomorrow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 120px;
+    height: 177px;
+    background: #1E213A;
+}
+
+.sun {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 120px;
+    height: 177px;
+    background: #1E213A;
+}
+
+.mon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 120px;
+    height: 177px;
+    background: #1E213A;
+}
+
+.tue {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 120px;
+    height: 177px;
+    background: #1E213A;
+}
+
+.wed {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 120px;
+    height: 177px;
+    background: #1E213A;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>weather-app</title>
+        <link rel="stylesheet" href="./styles/styles.css">
+    </head>
+
+    <body>
+            <main class="left-section">
+                <header>
+                    <div class="button">
+                        <button type="submit">
+                            Search for places
+                        </button>
+                    </div>
+
+                    <div class="geo-ico">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-current-location" width="22" height="22" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="12" r="3" />
+                            <circle cx="12" cy="12" r="8" />
+                            <line x1="12" y1="2" x2="12" y2="4" />
+                            <line x1="12" y1="20" x2="12" y2="22" />
+                            <line x1="20" y1="12" x2="22" y2="12" />
+                            <line x1="2" y1="12" x2="4" y2="12" />
+                          </svg>
+                    </div>
+                </header>
+
+                <section class="cloud-background">
+                    <img width="180px" height="202px" src="./assets/imgs/Shower.png" alt="">
+                </section>
+
+                <section class="infos">
+                    <div class="left-temp">
+                        15
+                        <span style="font-size: 36px;">ºc</span>
+                    </div>
+
+                    <p style="color: #A09FB1; font-weight: 600; font-size: 36px;">
+                        Shower
+                    </p>
+                    <div style="margin-top: 40px; color:#a09fb1c7">
+                        <span>Today</span> <span>•</span> <span>Fri, 5 Jun</span>
+                    </div>
+
+                    <div class="location">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="15" height="15" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="11" r="3" />
+                            <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                          </svg>
+                          <span>Helsinki</span>
+                    </div>
+                </section>
+            </main>
+
+            <main class="right-section">
+                <section class="selector-temp">
+                    <button id="celcius" type="submit">
+                        ºC
+                    </button>
+                    <button id="fireheight" type="submit">
+                        ºF
+                    </button>
+                </section>
+                <section class="week-time">
+                    <div class="tomorrow">
+                        <h4 class="week">
+                            Tomorrow
+                        </h4>
+                        <img id="img-s" src="../assets/imgs/Sleet.png" alt="snow-time">
+                        <div class="temp-week">
+                            <span>16ºC</span> <p>11ºC</p>
+                         </div>
+                    </div>
+                    <div class="sun">
+                        <h4 class="week">
+                            Sun, 7 Jun
+                        </h4>
+                        <img id="img-s" src="../assets/imgs/Sleet.png" alt="snow-time">
+                        <div class="temp-week">
+                            <span>16ºC</span> <p>11ºC</p>
+                         </div>
+                    </div>
+                    <div class="mon">
+                        <h4 class="week">
+                            Mon, 8 Jun   
+                        </h4>
+                        <img id="img-s" src="../assets/imgs/Thunderstorm.png" alt="thunderstorm">
+                        <div class="temp-week">
+                            <span>16ºC</span> <p>11ºC</p>
+                         </div>
+                    </div>
+                    <div class="tue">
+                        <h4 class="week">
+                            Tue, 9 Jun   
+                        </h4>
+                        <img id="img-s" src="../assets/imgs/LightCloud.png" alt="light=cloud">
+                        <div class="temp-week">
+                            <span>16ºC</span> <p>11ºC</p>
+                         </div>
+                    </div>
+                    <div class="wed">
+                        <h4 class="week">
+                            Wed, 10 Jun    
+                        </h4>
+                        <img id="img-s" src="../assets/imgs/LightRain.png" alt="Light-Rain">
+                        <div class="temp-week">
+                           <span>16ºC</span> <p>11ºC</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+    </body>
+
+</html>
