@@ -25,6 +25,7 @@ header {
 }
 
 #celcius {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +39,7 @@ header {
 }
 
 #fireheight {
+    cursor: pointer;
     display: flex;
     justify-content: center;
     color: #E7E7EB;
@@ -148,12 +150,11 @@ backdrop-filter: blur(10px);
 .week-time {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: space-around;
+    align-items: center;
     margin-right: 123px;
     margin-top: 66px;
     margin-left: 154px;
-    gap: 30px;
 }
 
 .week {
@@ -184,7 +185,7 @@ backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 120px;
     height: 177px;
     background: #1E213A;
@@ -194,7 +195,7 @@ backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 120px;
     height: 177px;
     background: #1E213A;
@@ -204,7 +205,7 @@ backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 120px;
     height: 177px;
     background: #1E213A;
@@ -214,7 +215,7 @@ backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 120px;
     height: 177px;
     background: #1E213A;
@@ -224,15 +225,115 @@ backdrop-filter: blur(10px);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
     width: 120px;
     height: 177px;
     background: #1E213A;
 }
 
+.Today-hl {
+    font-weight: 700;
+    font-size: 24px;
+    color: #E7E7EB;
+    margin-top: 72px;
+    margin-bottom: 32px;
+    margin-left: 154px;
+}
 
+.wind-humidity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 
+.wind-stts {
+    width: 328px;
+    height: 204px;
+    background: #1E213A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.wind-stts>.temp-week {
+    margin-bottom: 6px;
+}
 
+.values {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E7E7EB;
+    font-weight: 700;
+    font-size: 72px;
+}
 
+.values>span {
+    font-size: 32px;
+    margin-top: 15px;
+    font-weight: 400;
+}
 
+.loc {
+    display: flex;
+    align-items: center;
+    margin-top: 26px; 
+    gap: 12px;
+}
+
+.loc>span {
+    color: #E7E7EB;
+}
+
+.wind-stts>.loc>svg {
+    transform: rotate(170deg);
+    padding: 7px;
+    border-radius: 52px;
+    color: #E7E7EB;
+    background: #585676;
+}
+
+.humidity {
+    width: 328px;
+    height: 204px;
+    background: #1E213A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.humidity>.temp-week {
+margin-top: 30px;
+margin-bottom: 11px;
+}
+
+.humidity>.values {
+    margin-bottom: 12px;
+}
+
+.percentage {
+    margin-top: 12px;
+    color: #A09FB1;
+    display: flex;
+    font-size: 12px;
+    gap: 92px;
+    padding-bottom: 2px;
+}
+
+.per-bar {
+    display: flex;
+    border-radius: 12px;
+    width: 229px;
+    height: 8px;
+    background: linear-gradient(to right, #FFEC65, #FFEC65, #ffed65be,#E7E7EB);
+}
+
+.per {
+    color: #A09FB1;
+    font-size: 14px;
+    display: flex;
+    margin-top: 2px;
+    margin-left: 212px;
+}
