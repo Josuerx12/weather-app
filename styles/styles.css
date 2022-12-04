@@ -10,15 +10,7 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-header {
-    margin-top: 42px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#img-s {
+.img-s {
     width: 56px;
     height: 62px;
     margin-bottom: 30px;
@@ -38,7 +30,7 @@ header {
     box-shadow: 2px 2px 4px black;
 }
 
-#fireheight {
+#fahrenheit {
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -53,27 +45,34 @@ header {
     box-shadow: 2px 2px 4px black;
 }
 
+main {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
 .left-section {
-    width: 32%;
-    min-height: 105vh;
+    width: 450px;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
     background: #1E213A;
-    background-repeat: no-repeat;
-    background-position: center;
 }
 
-.right-section {
-    background: #100E1D;
-    width: 68%;
-    min-height: 105vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: 1;
+.search-container {
+    margin-top: 42px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.button button {
+.button-container button {
     background: #6E707A;
     cursor: pointer;
-    margin-left: 30px;
     padding: 7px 10px 7px 10px;
     border: none;
     border-radius: 2px;
@@ -84,11 +83,10 @@ header {
 
 .geo-ico {
     display: flex;
-    margin-right: 30px;
     align-items: center;
     background: #6E707A;
     border-radius: 16px;
-    padding: 2px;
+    padding: 4px;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.863);
 }
@@ -134,27 +132,37 @@ header {
 
 .location {
     color: #a09fb1c7;
-    margin-top: 20px;
+    margin: 10px 0 40px 0;
     display: flex;
     align-items: center;
 }
 
+.right-section {
+    background: #100E1D;
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 1;
+    flex-grow: 1;
+    padding: 0px 80px;
+}
+
 .selector-temp {
-    margin-top: 42px;
-    margin-right: 125px;
     display: flex;
     justify-content: flex-end;
     gap: 12px;
+    margin: 30px 0;
 }
 
 .week-time {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 123px;
-    margin-top: 66px;
-    margin-left: 154px;
+}
+
+.week-time article {
+    width: 150px;;
 }
 
 .week {
@@ -237,18 +245,17 @@ header {
     color: #E7E7EB;
     margin-top: 72px;
     margin-bottom: 32px;
-    margin-left: 154px;
 }
 
 .wind-humidity {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
 .wind-stts {
-    width: 328px;
+    width: 45%;
     height: 204px;
     background: #1E213A;
     display: flex;
@@ -296,7 +303,7 @@ header {
 }
 
 .humidity {
-    width: 328px;
+    width: 45%;
     height: 204px;
     background: #1E213A;
     display: flex;
