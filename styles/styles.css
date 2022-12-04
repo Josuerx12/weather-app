@@ -55,7 +55,7 @@ header {
 
 .left-section {
     width: 32%;
-    height: 1080px;
+    min-height: 105vh;
     background: #1E213A;
     background-repeat: no-repeat;
     background-position: center;
@@ -64,7 +64,7 @@ header {
 .right-section {
     background: #100E1D;
     width: 68%;
-    height: 1080px;
+    min-height: 105vh;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
@@ -102,20 +102,20 @@ header {
 }
 
 .cloud-background::before {
-content: '';
-display: block;
-position: absolute;
-left: 20;
-top: 30;
-width: 580px;
-height: 340px;
-opacity: 0.1;
-background: url(../assets/imgs/Cloud-background.png);
-background-repeat: no-repeat;
-background-position: center;
-background-size: cover;
--webkit-backdrop-filter: blur(10px);
-backdrop-filter: blur(10px);
+    content: '';
+    display: block;
+    position: absolute;
+    left: 20;
+    top: 30;
+    width: 580px;
+    height: 340px;
+    opacity: 0.1;
+    background: url(../assets/imgs/Cloud-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 .infos {
