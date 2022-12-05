@@ -9,10 +9,11 @@
     </head>
 
     <body>
-            <main class="left-section">
-                <header>
-                    <div class="button">
-                        <button type="submit">
+        <main class="container">
+            <aside class="left-section">
+                <div class="search-container">
+                    <div class="button-container">
+                        <button>
                             Search for places
                         </button>
                     </div>
@@ -28,11 +29,11 @@
                             <line x1="2" y1="12" x2="4" y2="12" />
                           </svg>
                     </div>
-                </header>
+                </div>
 
-                <section class="cloud-background">
-                    <img width="180px" height="202px" src="./assets/imgs/Shower.png" alt="">
-                </section>
+                <div class="cloud-background">
+                    <img src="./assets/imgs/Shower.png" alt="shower img">
+                </div>
 
                 <section class="infos">
                     <div class="left-temp">
@@ -56,23 +57,23 @@
                           <span>Helsinki</span>
                     </div>
                 </section>
-            </main>
+            </aside>
 
-            <main class="right-section">
-                <section class="selector-temp">
+            <section class="right-section">
+                <div class="selector-temp">
                     <button id="celcius" type="submit">
                         ºC
                     </button>
                     <button id="fireheight" type="submit">
                         ºF
                     </button>
-                </section>
-                <section class="week-time">
+                </div>
+                <div class="week-time">
                     <div class="tomorrow">
                         <h4 class="week">
                             Tomorrow
                         </h4>
-                        <img id="img-s" src="./assets/imgs/Sleet.png" alt="snow-time">
+                        <img class="img-s" src="./assets/imgs/Sleet.png" alt="snow-time">
                         <div class="temp-week">
                             <span>16ºC</span> <p>11ºC</p>
                          </div>
@@ -81,7 +82,7 @@
                         <h4 class="week">
                             Sun, 7 Jun
                         </h4>
-                        <img id="img-s" src="./assets/imgs/Sleet.png" alt="snow-time">
+                        <img class="img-s" src="./assets/imgs/Sleet.png" alt="snow-time">
                         <div class="temp-week">
                             <span>16ºC</span> <p>11ºC</p>
                          </div>
@@ -90,7 +91,7 @@
                         <h4 class="week">
                             Mon, 8 Jun   
                         </h4>
-                        <img id="img-s" src="./assets/imgs/Thunderstorm.png" alt="thunderstorm">
+                        <img class="img-s" src="./assets/imgs/Thunderstorm.png" alt="thunderstorm">
                         <div class="temp-week">
                             <span>16ºC</span> <p>11ºC</p>
                          </div>
@@ -99,7 +100,7 @@
                         <h4 class="week">
                             Tue, 9 Jun   
                         </h4>
-                        <img id="img-s" src="./assets/imgs/LightCloud.png" alt="light=cloud">
+                        <img class="img-s" src="./assets/imgs/LightCloud.png" alt="light=cloud">
                         <div class="temp-week">
                             <span>16ºC</span> <p>11ºC</p>
                          </div>
@@ -108,16 +109,16 @@
                         <h4 class="week">
                             Wed, 10 Jun    
                         </h4>
-                        <img id="img-s" src="./assets/imgs/LightRain.png" alt="Light-Rain">
+                        <img class="img-s" src="./assets/imgs/LightRain.png" alt="Light-Rain">
                         <div class="temp-week">
                            <span>16ºC</span> <p>11ºC</p>
                         </div>
                     </div>
-                </section>
+                </div>
                 <h1 class="Today-hl">
                     Today's Hightlights
                 </h1>
-                <section class="wind-humidity">
+                <div class="wind-humidity">
                     <div class="wind-stts">
                         <p class="temp-week">Wind Status</p>
                         <p class="values">7<span>mph</span></p>
@@ -140,8 +141,9 @@
                         <div class="per-bar"></div>
                         <div class="per">%</div>
                     </div>
-                </section>
-            </main>
+                </div>
+            </section>
+        </main>
     </body>
 
 </html>

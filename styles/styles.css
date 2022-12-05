@@ -10,7 +10,15 @@ body {
     font-family: 'Raleway', sans-serif;
 }
 
-header {
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.search-container {
     margin-top: 42px;
     display: flex;
     flex-direction: row;
@@ -18,7 +26,7 @@ header {
     align-items: center;
 }
 
-#img-s {
+.img-s {
     width: 56px;
     height: 62px;
     margin-bottom: 30px;
@@ -54,8 +62,8 @@ header {
 }
 
 .left-section {
-    width: 32%;
-    min-height: 105vh;
+    width: 450px;
+    min-height: 100vh;
     background: #1E213A;
     background-repeat: no-repeat;
     background-position: center;
@@ -63,14 +71,16 @@ header {
 
 .right-section {
     background: #100E1D;
-    width: 68%;
-    min-height: 105vh;
+    width: 1295px;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 1;
+    flex-grow: 1;
+    padding: 0px 80px;
 }
 
-.button button {
+.button-container button {
     background: #6E707A;
     cursor: pointer;
     margin-left: 30px;
@@ -88,7 +98,7 @@ header {
     align-items: center;
     background: #6E707A;
     border-radius: 16px;
-    padding: 2px;
+    padding: 4px;
     cursor: pointer;
     color: rgba(255, 255, 255, 0.863);
 }
@@ -99,6 +109,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.cloud-background>img {
+    width:180px;
+    height:202px;
 }
 
 .cloud-background::before {
@@ -327,7 +342,7 @@ margin-bottom: 11px;
     border-radius: 12px;
     width: 229px;
     height: 8px;
-    background: linear-gradient(to right, #FFEC65, #FFEC65, #ffed65be,#E7E7EB);
+    background: linear-gradient(to right, #FFEC65, #FFEC65,#E7E7EB);
 }
 
 .per {
