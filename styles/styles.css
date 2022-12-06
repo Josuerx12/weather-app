@@ -1,6 +1,8 @@
 @import url(../styles/reset.css);
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 body {
     display: flex;
@@ -15,7 +17,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    min-height: 100vh;
 }
 
 .search-container {
@@ -65,16 +66,18 @@ body {
     width: 450px;
     min-height: 100vh;
     background: #1E213A;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .right-section {
     background: #100E1D;
-    width: 1295px;
+    width: 1300px;
     min-height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     z-index: 1;
     flex-grow: 1;
     padding: 0px 80px;
@@ -84,9 +87,9 @@ body {
     background: #6E707A;
     cursor: pointer;
     margin-left: 30px;
-    padding: 7px 10px 7px 10px;
+    padding: 10px 20px 10px 20px;
     border: none;
-    border-radius: 2px;
+    border-radius: 10px;
     box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
     font-weight: 500;
     color: rgba(255, 255, 255, 0.863);
@@ -104,7 +107,6 @@ body {
 }
 
 .cloud-background {
-    flex-wrap: wrap;
     margin-top: 120px;
     display: flex;
     justify-content: center;
@@ -114,14 +116,14 @@ body {
 .cloud-background>img {
     width:180px;
     height:202px;
+    display: flex;
+    
 }
 
 .cloud-background::before {
     content: '';
     display: block;
     position: absolute;
-    left: 20;
-    top: 30;
     width: 580px;
     height: 340px;
     opacity: 0.1;
@@ -142,9 +144,13 @@ body {
 }
 
 .left-temp {
+    display: flex;
+    gap: 2px;
+    align-items: flex-end;
     color: #f2f2f2;
-    margin-bottom: 40px;
-    font-size: 72px;
+    margin-bottom: 87px;
+    font-weight: 600;
+    font-size: 120px;
 }
 
 .location {
@@ -152,6 +158,7 @@ body {
     margin-top: 20px;
     display: flex;
     align-items: center;
+    gap: 5px;
 }
 
 .selector-temp {
@@ -165,7 +172,7 @@ body {
 .week-time {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-right: 123px;
     margin-top: 66px;
@@ -260,6 +267,7 @@ body {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    margin-right: 35px;
 }
 
 .wind-stts {
@@ -320,8 +328,8 @@ body {
 }
 
 .humidity>.temp-week {
-margin-top: 30px;
-margin-bottom: 11px;
+    margin-top: 30px;
+    margin-bottom: 11px;
 }
 
 .humidity>.values {
@@ -351,4 +359,60 @@ margin-bottom: 11px;
     display: flex;
     margin-top: 2px;
     margin-left: 212px;
+}
+
+.visi-air {
+    display: flex;
+    justify-content: space-around;
+    margin-right: 35px;
+    flex-grow: 1;
+    margin-top: 48px;
+    margin-bottom: 10px;
+}
+
+.visibility {
+    width: 328px;
+    height: 159px;
+    background: #1E213A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.visibility>.temp-week {
+    margin-top: 30px;
+    margin-bottom: 11px;
+}
+    
+.visibility>.values {
+    margin-bottom: 12px;
+}
+
+.Air {
+    width: 328px;
+    height: 159px;
+    background: #1E213A;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.Air>.temp-week {
+    margin-top: 30px;
+    margin-bottom: 11px;
+}
+    
+.Air>.values {
+    margin-bottom: 12px;
+}
+
+.bye {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #A09FB1;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 25px;
 }
